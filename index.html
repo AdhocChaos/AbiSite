@@ -56,7 +56,7 @@
       margin-bottom: 0.5rem;
     }
 
-    .card {
+    .cardL {
       display: flex;
       flex-direction: row;
       background-color: #C8D3C4;
@@ -64,15 +64,38 @@
       margin-bottom: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      align-items: center;
+      align-items: left;
       gap: 1.5rem;
     }
 
-    .card:nth-child(even) {
+    .cardL:nth-child(even) {
       flex-direction: row-reverse;
     }
 
-    .card img {
+    .cardL img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .cardR {
+      display: flex;
+      flex-direction: row;
+      background-color: #C8D3C4;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      align-items: right;
+      gap: 1.5rem;
+    }
+
+    .cardR:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .cardR img {
       width: 150px;
       height: 150px;
       object-fit: cover;
@@ -125,7 +148,7 @@
   </header>
 
   <div class="container">
-    <div class="card">
+    <div class="cardL">
       <img src="pics/wedding.png" alt="Weddings">
       <div class="card-text">
         <h1>Weddings</h1>
@@ -133,7 +156,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="cardR">
       <img src="pics/baby.png" alt="Baby Showers">
       <div class="card-text">
         <h1>Baby Showers</h1>
@@ -141,7 +164,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="cardL">
       <img src="pics/grad.png" alt="Graduation Events">
       <div class="card-text">
         <h1>Graduations</h1>
@@ -149,7 +172,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="cardR">
       <img src="pics/bridal.png" alt="Bridal Showers">
       <div class="card-text">
         <h1>Bridal Showers</h1>
@@ -157,7 +180,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="cardL">
       <img src="pics/corp.png" alt="Corporate Events">
       <div class="card-text">
         <h1>Corporate Events</h1>
@@ -165,7 +188,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="cardR">
       <img src="pics/funeral.png" alt="Celebrations of Life">
       <div class="card-text">
         <h1>Funerals & Celebrations of Life</h1>
@@ -173,7 +196,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="cardL">
       <img src="pics/event.png" alt="Custom Events">
       <div class="card-text">
         <h1>Whatever Event You're Planning</h1>

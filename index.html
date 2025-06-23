@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="fav.ico">
   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <title>Ivy & Sage Event Planning</title>
   <style>
@@ -22,6 +23,25 @@
       font-size: 2em;
       font-weight: bold;
     }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* space between logo and text */
+      background-color: #9EB594;
+      color: #4c4c4c;
+      font-family: 'Caveat', cursive;
+      text-align: center;
+      padding: 1em;
+      font-size: 2em;
+      font-weight: bold; 
+    }
+
+   .logo {
+     height: 50px; /* adjust as needed */
+     width: auto;
+   }
+
 
     h1 {
       font-family: 'Caveat', cursive;
@@ -142,7 +162,10 @@
   </style>
 </head>
 <body>
-  <header>Ivy & Sage Event Planning Services</header>
+  <header>
+    <img src="pics/logo.png" alt="Ivy & Sage Logo" class="logo">
+    Ivy & Sage Event Planning Services
+  </header>
 
   <div class="dropdown">
     <select onchange="location = this.value;">

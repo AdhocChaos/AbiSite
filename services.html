@@ -16,11 +16,11 @@
     }
 
     header {
-      background-color: #9EB594;
+      background-color: #B88A44;
+      padding: 1.5rem;
       display: flex;
       align-items: center;
-      padding: 1.5rem;
-      gap: 1rem;
+      justify-content: space-between;
       font-family: 'Caveat', cursive;
       font-size: 2rem;
       color: #533A06;
@@ -29,6 +29,17 @@
     header img.logo {
       height: 50px;
       width: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #533A06;
+      font-weight: bold;
     }
 
     .container {
@@ -91,7 +102,12 @@
 <body>
   <header>
     <img src="pics/logo.png" alt="Ivy & Sage Logo" class="logo" />
-    Packages at Ivy & Sage
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <div class="container">

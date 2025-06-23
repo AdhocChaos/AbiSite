@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Services | Ivy & Sage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #C8D3C4;
+      color: #533A06;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-family: 'Caveat', cursive;
+      color: #533A06;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      background-color: #9EB594;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card-text {
+      flex: 1;
+    }
+
+    .card-text p {
+      margin: 0.5rem 0 0;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="pics/wedding.png" alt="Weddings">
+      <div class="card-text">
+        <h1>Weddings</h1>
+        <p>From intimate elopements to grand ceremonies, we handle every detail to bring your dream day to life. Our wedding planning services include venue coordination, vendor management, timelines, décor, and day-of coordination—so you can focus on saying “I do.”</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pics/baby.png" alt="Baby Showers">
+      <div class="card-text">
+        <h1>Baby Showers</h1>
+        <p>Celebrate the joy of new beginnings with a beautifully themed baby shower. Whether it’s a casual gathering or a Pinterest-worthy event, we design it with warmth, creativity, and personalized touches to make the parents-to-be feel truly special.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pics/grad.png" alt="Graduation Events">
+      <div class="card-text">
+        <h1>Graduations</h1>
+        <p>Celebrate achievements big and small with a graduation event that honors the hard work behind the milestone. Whether it’s a backyard party, formal dinner, or open house, we help you plan a meaningful celebration that reflects the graduate’s journey, style, and future ahead.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pics/bridal.png" alt="Bridal Showers">
+      <div class="card-text">
+        <h1>Bridal Showers</h1>
+        <p>From classy brunches to festive gatherings with games and gifts, we plan stylish bridal showers that reflect the bride’s personality and preferences. We’ll help you set the tone—elegant, cozy, or playful—for a day she’ll never forget.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pics/corp.png" alt="Corporate Events">
+      <div class="card-text">
+        <h1>Corporate Events</h1>
+        <p>Whether you’re hosting a networking dinner, client appreciation night, or end-of-year celebration, we bring professionalism and polish to your event. We handle logistics, ambience, and service so you can focus on your team and your message.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pics/funeral.png" alt="Celebrations of Life">
+      <div class="card-text">
+        <h1>Funerals & Celebrations of Life</h1>
+        <p>In times of loss, we offer gentle, respectful event coordination to ease the burden on your family. From memorial slideshows to floral arrangements and guest flow, we honor your loved one’s legacy with care, compassion, and dignity.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pics/event.png" alt="Custom Events">
+      <div class="card-text">
+        <h1>Whatever Event You're Planning</h1>
+        <p>Not seeing your event listed? We love bringing all kinds of visions to life—engagement parties, milestone birthdays, retirement gatherings, proposals, holiday parties, and more. If you can dream it, we can help you plan it.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

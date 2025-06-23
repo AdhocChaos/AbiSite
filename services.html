@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="fav.ico">
+  <title>Packages | Ivy & Sage Event Planning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #C8D3C4;
+      color: #533A06;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #9EB594;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem;
+      gap: 1rem;
+      font-family: 'Caveat', cursive;
+      font-size: 2rem;
+      color: #533A06;
+    }
+
+    header img.logo {
+      height: 50px;
+      width: auto;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .package {
+      background-color: #FDFDFD;
+      border: 2px solid #B88A44;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .package img {
+      width: 100%;
+      height: auto;
+    }
+
+    .package-content {
+      padding: 1.5rem;
+    }
+
+    .package h2 {
+      font-family: 'Caveat', cursive;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #D6A94A;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .summary {
+      margin-bottom: 1rem;
+    }
+
+    .more-info {
+      display: none;
+      margin-top: 1rem;
+    }
+
+    .toggle-button {
+      background-color: #7A9473;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="pics/logo.png" alt="Ivy & Sage Logo" class="logo" />
+    Packages at Ivy & Sage
+  </header>
+
+  <div class="container">
+    <div class="package">
+      <img src="pics/essentials.jpg" alt="Essentials Package">
+      <div class="package-content">
+        <h2>Essentials Package</h2>
+        <div class="price">$500</div>
+        <div class="summary">Perfect for smaller gatherings or DIY planners who need just a bit of support with coordination and timeline management.</div>
+        <button class="toggle-button" onclick="toggleInfo(this)">See More</button>
+        <div class="more-info">
+          <ul>
+            <li>Initial consultation & planning checklist</li>
+            <li>Vendor referral list</li>
+            <li>Day-of coordination (up to 6 hours)</li>
+            <li>Timeline management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="package">
+      <img src="pics/signature.jpg" alt="Signature Package">
+      <div class="package-content">
+        <h2>Signature Package</h2>
+        <div class="price">$1,200</div>
+        <div class="summary">Our most popular option—comprehensive planning and design help to bring your vision together beautifully and efficiently.</div>
+        <button class="toggle-button" onclick="toggleInfo(this)">See More</button>
+        <div class="more-info">
+          <ul>
+            <li>Full planning support (virtual or in-person)</li>
+            <li>Theme, color, and décor assistance</li>
+            <li>Vendor communication & coordination</li>
+            <li>Day-of coverage with 1 assistant (up to 10 hours)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="package">
+      <img src="pics/luxe.jpg" alt="Luxe Package">
+      <div class="package-content">
+        <h2>Luxe Package</h2>
+        <div class="price">$2,500+</div>
+        <div class="summary">For clients seeking full-service support, styling, and on-site presence from start to finish. We’ll handle every detail with excellence.</div>
+        <button class="toggle-button" onclick="toggleInfo(this)">See More</button>
+        <div class="more-info">
+          <ul>
+            <li>All services from Signature Package</li>
+            <li>Custom mood board & vision planning</li>
+            <li>Venue walkthrough & floor plan assistance</li>
+            <li>Extended team on event day</li>
+            <li>Guest experience planning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleInfo(button) {
+      const info = button.nextElementSibling;
+      const isVisible = info.style.display === 'block';
+      info.style.display = isVisible ? 'none' : 'block';
+      button.textContent = isVisible ? 'See More' : 'See Less';
+    }
+  </script>
+</body>
+</html>

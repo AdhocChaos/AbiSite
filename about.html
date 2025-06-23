@@ -102,21 +102,28 @@
       cursor: pointer;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: flex-start;
+      }
+      h1 {
+        flex-direction: column;
+        align-items: flex-start;      
       }
       nav {
         margin-top: 1rem;
         flex-direction: column;
       }
     }
+    
   </style>
 </head>
 <body>
+  
   <header>
     <img src="pics/logo.png" alt="Ivy & Sage Logo" class="logo" />
+    <h1>Ivy & Sage Event Planning Services</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>

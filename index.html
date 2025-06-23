@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abibelle's Ivy and Sage Event Planning</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #A8B6A2;
+      color: #4C4C4C;
+      text-align: center;
+      padding: 1em;
+      font-size: 2em;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    nav {
+      background-color: #7A9473;
+      padding: 1em;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+
+    nav button {
+      background-color: #C8D3C4;
+      color: white;
+      border: none;
+      padding: 0.75em;
+      margin: 0.25em 0;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      display: none;
+      background-color: #444;
+      padding: 1em;
+      width: 90vw;
+    }
+
+    .main {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2em;
+      padding: 2em;
+      background: #192f51;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    .sidebar-right {
+      border-left: 1px solid #b6e5ed;
+      padding-left: 2em;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      background-color: #a1d0fc;
+      padding: 1em;
+    }
+
+    .card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 0 1em;
+    }
+
+    .card-text {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .dropdown {
+        display: block;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sidebar-right {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 2em;
+      }
+
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .card img {
+        margin: 1em auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Abibelle Seter's Event Planning Services</header>
+
+  <div class="dropdown">
+    <select onchange="location = this.value;">
+      <option value="#">Options</option>
+      <option value="page1.html">About Me</option>
+      <option value="page2.html">Options</option>
+      <option value="page3.html">Contact Me</option>
+    </select>
+  </div>
+
+  <div class="container">
+    <nav>
+      <button onclick="location.href='page1.html'"></button>
+      <button onclick="location.href='page2.html'">Bhhhh</button>
+      <button onclick="location.href='page3.html'">Chhhh</button>
+    </nav>
+
+    <div class="main">
+      <div class="content">
+        <div class="card">
+          <img src="pics/wedding.png" alt="Morana">
+          <div class="card-text">
+            <h1>Weddings</h1>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pics/baby.png" alt="Emrys">
+          <div class="card-text">
+            <h1>Baby Showers</h1>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pics/child.png alt="Kaida">
+          <div class="card-text">
+            <h1>Child Dedications</h1>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pics/bridal.png" alt="Veda">
+          <div class="card-text">
+            <h1>Bridal Showers</h1>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pics/corp.png" alt="Corporate Catered Dinner Event Picture">
+          <div class="card-text">
+            <h1>Corporate Events</h1>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pics/funeral.png" alt="Auggie">
+          <div class="card-text">
+            <h1>Funerals & Celebrations of Life</h1>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pics/event.png" alt="Hazel">
+          <div class="card-text">
+            <h1>And More</h1>
+            <p></p>
+          </div>
+        </div>
+
+
+      <div class="sidebar-right">
+        <h3>Additional Info</h3>
+        <p>This area can contain vertically stacked text, updates, or any supplementary content.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="fav.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <title>About | Ivy & Sage Event Planning</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #7A9473;
+      color: #533A06;
+    }
+
+    header {
+      background-color: #B88A44;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Caveat', cursive;
+      font-size: 2rem;
+      color: #533A06;
+    }
+
+    header img.logo {
+      height: 50px;
+      width: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #533A06;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: #C8D3C4;
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      font-family: 'Caveat', cursive;
+      color: #533A06;
+      margin-top: 2rem;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid #D6A94A;
+      color: #533A06;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #D6A94A;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1.5rem;
+    }
+
+    .contact-form {
+      margin-top: 2rem;
+      background: #9EB594;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #B88A44;
+      border-radius: 5px;
+      background-color: #C8D3C4;
+      color: #533A06;
+    }
+
+    .contact-form button {
+      background-color: #D6A94A;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="pics/logo.png" alt="Ivy & Sage Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>About Ivy & Sage</h1>
+    <p>
+      At <strong>Ivy & Sage Event Planning</strong>, we believe that every celebration—big or small—deserves to be beautiful, intentional, and stress-free. Founded on a passion for bringing people together, we specialize in thoughtfully curated events that reflect your story, values, and vision.
+    </p>
+
+    <p>
+      With a background in event coordination, design, and hospitality, our lead planner brings not only expertise but also genuine care to each moment. From weddings to memorials, baby showers to corporate dinners, every detail matters—and we’re honored to walk with you from the first idea to the final toast.
+    </p>
+
+    <p>
+      What sets us apart? We combine organization with creativity, attentiveness with flexibility, and a calm, steady presence in the midst of chaos. Whether you're planning months ahead or facing a last-minute pivot, we’re here to support you every step of the way.
+    </p>
+
+    <p>
+      We don’t believe in cookie-cutter events—only celebrations that feel uniquely <em>you</em>.
+    </p>
+
+    <h2>✨ Our Mission</h2>
+    <p>
+      To make meaningful moments beautiful and stress-free by providing tailored planning services with compassion, creativity, and excellence.
+    </p>
+
+    <h2>💬 What Clients Say</h2>
+    <blockquote>
+      “Kind, reliable, and a joy to work with.”
+    </blockquote>
+    <blockquote>
+      “Every detail was thought of before I could even ask.”
+    </blockquote>
+    <blockquote>
+      “They brought my vision to life better than I imagined.”
+    </blockquote>
+
+    <h2>🌸 Meet the Planner</h2>
+    <p>
+      Hi, I'm Abi—founder and lead planner of Ivy & Sage. My heart beats for turning chaos into calm, and ideas into reality, so I approach every celebration with a balance of structure and soul. When I'm not planning events, you’ll find me playing with my daughter, reading at the library, or spending quality time with my loved ones. I know first hand how important it is to set aside time to be with loved ones, so let me take the planning reins to let you spend much needed time with those you care about most. Let’s create something beautiful together.
+    </p>
+
+    <a href="packages.html" class="button">Explore Our Services</a>
+
+    <h2>📬 Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="How can we help you?" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
